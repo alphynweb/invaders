@@ -1,0 +1,54 @@
+#introScreen {
+    padding-top: 2rem;
+    width: 70%;
+    // border: 1px solid red;
+    margin: auto;
+
+    #startButtonContainer, #invadersInfo, #controlsInfo {
+        padding-bottom: 3rem;
+    }
+
+    #startButtonContainer {
+        // border: 5px solid red;
+    }
+
+    #invadersInfo {
+        // border: 5px solid green;
+    }
+
+    #controlsInfo {
+        // border: 5px solid yellow;
+    }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid yellow;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+
+        // .lh-column, .rh-column {
+        //     width: 50%;
+        // }
+
+        .lh-column {
+            display: inline-block;
+            background-repeat: no-repeat;
+            // border: 1px solid red;
+            // text-align: right;
+            width: 70%;
+            padding-left: 9rem;
+
+            .invader-image {
+                display: inline-block;
+            }
+        }
+
+        .rh-column {
+            // border: 1px solid yellow;
+            // border: 1px solid green;
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+#screenCanvas {
+    pointer-events: none;
+    // border: 3px solid green;
+    width: 100%;
+    height: calc(#{$game-area-height} - #{$settings-height});
+    position: absolute;
+    top: $settings-height;
+    left: 0;
+}

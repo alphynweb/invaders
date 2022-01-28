@@ -1,0 +1,59 @@
+#gameArea {
+    margin: auto;
+    z-index: 50;
+    width: 1046px;
+    height: $game-area-height; // 800px
+    position: relative;
+    transform: scale(0.5); 
+    transform-origin: top center;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        content: 'Test';
+        display: block;
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: black;
+        font-size: 5rem;
+        display: none;
+    }
+
+    @media (orientation: landscape) and (min-height: 500px) {
+        transform: scale(calc(500 / 800));
+
+        &::after {
+            content: 'Landscape min-height 500px';
+        }
+    }
+
+    @media (orientation: landscape) and (min-height: 600px) {
+        transform: scale(calc(600 / 800));
+
+        &::after {
+            content: 'Landscape min-height 600px';
+        }
+    }
+
+    @media (orientation: landscape) and (min-height: 700px) {
+        transform: scale(calc(700 / 800));
+
+        &::after {
+            content: 'Landscape min-height 700px';
+        }
+    }
+
+    @media (orientation: landscape) and (min-height: $game-area-height) {
+        transform: scale(1);
+
+        &::after {
+            content: 'Landscape min-height 500px';
+        }
+    }
+}
+
+.hide {
+    display: none;
+}

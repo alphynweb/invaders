@@ -1,0 +1,22 @@
+#settings {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: $settings-height;
+    // border: 5px solid red;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    #soundToggle {
+        color: white;
+        cursor: pointer;
+    
+        svg {
+            font-size: $settings-height / 1.5;
+        }
+
+        i {
+            font-size: $settings-height / 1.5;
+        }
+    }
+}
